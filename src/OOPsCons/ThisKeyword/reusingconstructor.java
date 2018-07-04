@@ -9,7 +9,7 @@ public class reusingconstructor {
     String st2;
     double dnu;
 
-    reusingconstructor(int inum, String st, String st2) {
+    public reusingconstructor(int inum, String st, String st2) {
         this.inum = inum;
         this.st = st;
         this.st2 = st2;
