@@ -1,0 +1,18 @@
+1.SRC Means Source Code
+
+Package is a keyword it is already available in java and keyword should be started with small letter.
+comments :- it is documentations regarding code ,it just the information regarding purpose of code.
+Two type of comments
+1.one line comments:- like this //
+2.Multiple  line comments:- /*---*/
+
+main()Method --> It is starting/execution point of programing
+
+Data Types:- it is Representing our data in int,decimal,string format
+
+if i=10; here we initialized variable i with value 10
+  i=20;--> here we just replace value of i but i=20; it should be works because variable selection
+   with data should be unique, here we store one value at time .
+Rule:- statement line should be ended using ; its a rule in java  for Ex i=10;
+
+double is a keyword it is used for representing the floating value .

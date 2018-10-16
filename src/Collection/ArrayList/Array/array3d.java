@@ -1,4 +1,4 @@
-package Array;
+package Collection.ArrayList.Array;
 
 /**
  * Created by akshay.pokley on 7/4/2018.
