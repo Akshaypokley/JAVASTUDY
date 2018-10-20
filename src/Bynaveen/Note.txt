@@ -16,3 +16,16 @@ if i=10; here we initialized variable i with value 10
 Rule:- statement line should be ended using ; its a rule in java  for Ex i=10;
 
 double is a keyword it is used for representing the floating value .
+
+Difference between the methods print and println
+public class MyMessage2 {
+  public static void main(String[] args) {
+    System.out.print("JA");
+    System.out.print("VA");
+    System.out.println();
+  }
+}
+The println("...") method prints the string "..." and moves the cursor to a new line.
+The print("...") method instead prints just the string "...", but does not move the cursor to a new line.
+Hence, subsequent printing instructions will print on the same line. The println() method can also be used
+without parameters, to position the cursor on the next line.
