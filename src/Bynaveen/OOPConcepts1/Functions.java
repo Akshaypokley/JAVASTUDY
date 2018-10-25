@@ -13,6 +13,8 @@ public class Functions {
         System.out.println(functions.QAMethod());
         System.out.println(functions.divisionMethod(12,6));
 
+        //Main method is void ---we never return a value
+
     }
 
     //NON-Static Method/Functions
