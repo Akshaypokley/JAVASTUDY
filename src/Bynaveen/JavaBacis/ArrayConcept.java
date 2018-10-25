@@ -1,5 +1,7 @@
 package Bynaveen.JavaBacis;
 
+import java.util.Objects;
+
 /**
  * Created by akshay.pokley on 10/22/2018.
  */
@@ -72,9 +74,33 @@ public class ArrayConcept {
             System.out.println(str[str1]);
         }
 
+        //Object Array.....
+        //Object is a super class of all the class in java/ it is used store the value of any data type
 
+        System.out.println("Array of object");
+        Object ob[]=new Object[6];
+
+        ob[0]="Akshay";
+        ob[1]=012;
+        ob[2]=23.32;
+        ob[3]=6;
+        ob[4]=35;
+        ob[5]='P';
+
+        int k11=0;
+        while(k11<ob.length)
+        {
+            System.out.println(ob[k11]);
+            k11++;
+        }
+
+for(k11=0;k11<ob.length;k11++)
+{System.out.println(ob[k11]);}
 
     }
+
+
+
 
 
 }
