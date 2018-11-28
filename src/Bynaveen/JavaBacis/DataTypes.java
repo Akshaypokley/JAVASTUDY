@@ -1,12 +1,17 @@
 package Bynaveen.JavaBacis;
 
+import Bynaveen.Interfaces.Hello;
+
 /**
  * Created by akshay.pokley on 10/16/2018.
  */
-public class DataTypes {
+public class DataTypes implements Hello {
 
     public static void main(String args[])
     {
+
+DataTypes dataTypes=new DataTypes();
+dataTypes.Hello();
 
 /*    primitive  data types are int,double,char,boolean
 
@@ -40,5 +45,10 @@ public class DataTypes {
         boolean ss=true;
         boolean ks=false;
 
+    }
+
+    @Override
+    public void Hello() {
+        System.out.println("India");
     }
 }

@@ -21,7 +21,7 @@ public class wrapperclassConcepts {
         System.out.println(js);
 
 
-        String kl="121A";
+        String kl="121";
 
         int jk=Integer.parseInt(kl);//we got nummber formate exception
         System.out.println(jk);
