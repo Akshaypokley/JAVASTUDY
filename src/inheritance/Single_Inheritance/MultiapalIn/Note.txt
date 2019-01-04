@@ -1,0 +1,94 @@
+How are above problems handled for Default Methods and Interfaces ?
+
+Java 8 supports default methods where interfaces can provide default implementation of methods. And a class can implement two or more interfaces. In case both the implemented interfaces contain default methods with same method signature, the implementing class should explicitly specify which default method is to be used or it should override the default method.
+filter_none
+edit
+play_arrow
+
+brightness_4
+// A simple Java program to demonstrate multiple
+// inheritance through default methods.
+interface PI1
+{
+    // default method
+    default void show()
+    {
+        System.out.println("Default PI1");
+    }
+}
+
+interface PI2
+{
+    // Default method
+    default void show()
+    {
+        System.out.println("Default PI2");
+    }
+}
+
+// Implementation class code
+class TestClass implements PI1, PI2
+{
+    // Overriding default show method
+    public void show()
+    {
+        // use super keyword to call the show
+        // method of PI1 interface
+        PI1.super.show();
+
+        // use super keyword to call the show
+        // method of PI2 interface
+        PI2.super.show();
+    }
+
+    public static void main(String args[])
+    {
+        TestClass d = new TestClass();
+        d.show();
+    }
+}
+Output:
+
+Default PI1
+Default PI2
+If we remove implementation of default method from “TestClass”, we get compiler error. See this for a sample run.
+
+If there is a diamond through interfaces, then there is no issue if none of the middle interfaces provide implementation of root interface. If they provide implementation, then implementation can be accessed as above using super keyword.
+
+filter_none
+edit
+play_arrow
+
+brightness_4
+// A simple Java program to demonstrate how diamond
+// problem is handled in case of default methods
+
+interface GPI
+{
+    // default method
+    default void show()
+    {
+        System.out.println("Default GPI");
+    }
+}
+
+interface PI1 extends GPI { }
+
+interface PI2 extends GPI { }
+
+// Implementation class code
+class TestClass implements PI1, PI2
+{
+    public static void main(String args[])
+    {
+        TestClass d = new TestClass();
+        d.show();
+    }
+}
+Output:
+
+Default GPI
+This article is contributed by Vishal S. If you like GeeksforGeeks and would like to contribute, you can also write an article using contribute.geeksforgeeks.org or mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.
+
+Please write comments if you find anything incorrect, or you want to share more information about the topic discussed above.
+
